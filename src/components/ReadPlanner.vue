@@ -56,8 +56,8 @@ export default {
   },
   methods: {
     reset() {
-      this.pageCount = 0;
-      this.momentCount = 0;
+      this.pageCount = null;
+      this.momentCount = null;
     }
   },
   computed: {
