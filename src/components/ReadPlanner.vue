@@ -8,11 +8,11 @@
       </v-row>
       <v-row class="d-print-none">
         <v-col cols="12" md="5">
-          <v-text-field label="Total number of pages" type="number" v-model="pageCount"/>
+          <v-text-field clearable label="Total number of pages" type="number" v-model="pageCount"/>
 
         </v-col>
         <v-col cols="12" md="5">
-          <v-text-field label="Total moments (days, weeks, months)" type="number"
+          <v-text-field clearable label="Total moments (days, weeks, months)" type="number"
                         v-model="momentCount"/>
         </v-col>
         <v-col cols="12" md="2">
@@ -50,8 +50,8 @@ export default {
   name: "read-planner",
   data() {
     return {
-      pageCount: 0,
-      momentCount: 0,
+      pageCount: null,
+      momentCount: null,
     }
   },
   methods: {
